@@ -1,0 +1,16 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5433,
+  "username": "postgres",
+  "password": "codedrops",
+  "database": "codedrops",
+  "synchronize": false,
+  "logging": false,
+  "entities": ["./src/database/models/*.ts"],              
+  "migrations": ["./src/database/migrations/*.ts"],
+  "cli": {
+    "migrationsDir": "./src/database/migrations",
+    "entitiesDir": "./src/database/models"
+  }
+}
